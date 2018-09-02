@@ -3,9 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Route, withRouter, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
-import styled, { css } from 'styled-components';
 import Nav from '../presentationals/Nav';
-import Home from '../presentationals/Home';
 import { addTodoSync } from '../../actions/todos/actionCreators';
 import { fetchPostsAsync } from '../../actions/todos/asyncActions';
 import Loading from '../presentationals/Loading';
@@ -15,22 +13,12 @@ const LoadableComponent = Loadable({
   loading: Loading
 });
 
-const Button = styled.button`
-
-    background: none;;a
-border: 2px solid pink;
-      border-radius: 4px;
-  box-shadow: none;
-    ${
-    props => props.innerToo && css`
-        color: pink;
-      `
-    }
-`;
+const Home = () => <h2>Routing Home</h2>;
 
 class AppContainer extends Component {
   constructor (prop) {
     super (prop);
+
     this.state = {
       loadTrigger: false
     }
@@ -52,14 +40,11 @@ class AppContainer extends Component {
     return (
         <div>
           <Nav />
-          <h1>List...</h1>
           <hr/>
-          <Button as='a' href='/'>I'm Button</Button>
-          <Button
-              innerToo
+          <button
               onClick={this.onClickHandler}
               onMouseOver={this.onHoverHandler}
-          >Load</Button>
+          >Todo list preLoad button</button>
           <Switch>
             <Route
                 exact

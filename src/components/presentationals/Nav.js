@@ -1,22 +1,37 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+
+const StyledNavLink = styled(NavLink).attrs({
+  to: ({ to }) => to,
+  activeClassName: 'activatedLink',
+  exact: ({ exact }) => exact
+})`
+  text-decoration: none;
+  color: #222;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  
+  &.activatedLink {
+    opacity: 0.4;
+  }
+`
 
 const Nav = () => {
   return (
       <nav>
-        <NavLink
-            exact
+        <StyledNavLink
             to='/'
-            activeClassName='activatedLink'
+            exact
         >
           Go Home
-        </NavLink>
-        <NavLink
-            to='/todo-list'
-            activeClassName='activatedLink'
-        >Go
-          Todo
-          list</NavLink>
+        </StyledNavLink>
+        <StyledNavLink
+            to="/todo-list"
+        >
+          Go NavList
+        </StyledNavLink>
       </nav>
   )
 }

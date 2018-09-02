@@ -10,23 +10,23 @@ const preloadedState = {
 }
 
 /*
-* 1. enable chrome dev tool of redux
-* you can restrict dev tool inspector by adding key to composeEnhancers const
-* see more available list here
+* Chrome 리덕스 디버깅 툴의 기능을 제한할 수 있습니다.
+* 자세한 내용은 아래 주소에서 확인해주세요.
 * https://github.com/zalmoxisus/redux-devtools-extension/blob/master/docs/API/Arguments.md#windowdevtoolsextensionconfig
 */
-const composeEnhancers = composeWithDevTools({
-  // actionsBlacklist: ['ADD_TODO']
-});
-const store = createStore(rootReducer, preloadedState, composeEnhancers(
-    applyMiddleware(thunkMiddleware)
-));
+let store;
 
-/*
-* 2. disable chrome dev tool of redux
-const store = createStore(rootReducer, preloadedState, applyMiddleware(
-    thunkMiddleware
-));
-*/
+if (process.env.NODE_ENV === 'development') {
+  const composeEnhancers = composeWithDevTools({
+    // actionsBlacklist: ['ADD_TODO']
+  });
+  store = createStore(rootReducer, preloadedState, composeEnhancers(
+      applyMiddleware(thunkMiddleware)
+  ));
+} else {
+  store = createStore(rootReducer, preloadedState, applyMiddleware(
+      thunkMiddleware
+  ));
+}
 
 export default store;
