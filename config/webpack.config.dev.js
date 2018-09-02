@@ -9,6 +9,7 @@ const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
+const SpritesmithPlugin = require('webpack-spritesmith');
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
 
@@ -211,6 +212,23 @@ module.exports = {
     ],
   },
   plugins: [
+    new SpritesmithPlugin({
+      src: {
+        cwd: paths.appSrc + '/sprites/sources',
+        glob: '**/*.png'
+      },
+      target: {
+        image: paths.appSrc + '/sprites/sprite.png',
+        css: [
+          [paths.appSrc + '/sprites/sprite.json', {
+            format: 'json_array'
+          }]
+        ]
+      },
+      apiOptions: {
+        cssImageRef: paths.appSrc + '/sprites/sprite.png'
+      }
+    }),
     // Makes some environment variables available in index.html.
     // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">

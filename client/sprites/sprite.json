@@ -1,0 +1,98 @@
+[
+    {
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 32,
+        "name": "biscuit",
+        "source_image": "C:\\Users\\wychoi\\Documents\\TASK\\react-redux-starter-kit\\client\\sprites\\sources\\biscuit.png",
+        "image": "C:\\Users\\wychoi\\Documents\\TASK\\react-redux-starter-kit\\client/sprites/sprite.png",
+        "escaped_image": "C:\\Users\\wychoi\\Documents\\TASK\\react-redux-starter-kit\\client/sprites/sprite.png",
+        "total_width": 64,
+        "total_height": 64,
+        "offset_x": 0,
+        "offset_y": 0,
+        "px": {
+            "x": "0px",
+            "y": "0px",
+            "offset_x": "0px",
+            "offset_y": "0px",
+            "height": "32px",
+            "width": "32px",
+            "total_height": "64px",
+            "total_width": "64px"
+        }
+    },
+    {
+        "x": 32,
+        "y": 0,
+        "width": 32,
+        "height": 32,
+        "name": "cake",
+        "source_image": "C:\\Users\\wychoi\\Documents\\TASK\\react-redux-starter-kit\\client\\sprites\\sources\\cake.png",
+        "image": "C:\\Users\\wychoi\\Documents\\TASK\\react-redux-starter-kit\\client/sprites/sprite.png",
+        "escaped_image": "C:\\Users\\wychoi\\Documents\\TASK\\react-redux-starter-kit\\client/sprites/sprite.png",
+        "total_width": 64,
+        "total_height": 64,
+        "offset_x": -32,
+        "offset_y": 0,
+        "px": {
+            "x": "32px",
+            "y": "0px",
+            "offset_x": "-32px",
+            "offset_y": "0px",
+            "height": "32px",
+            "width": "32px",
+            "total_height": "64px",
+            "total_width": "64px"
+        }
+    },
+    {
+        "x": 0,
+        "y": 32,
+        "width": 32,
+        "height": 32,
+        "name": "soda",
+        "source_image": "C:\\Users\\wychoi\\Documents\\TASK\\react-redux-starter-kit\\client\\sprites\\sources\\soda.png",
+        "image": "C:\\Users\\wychoi\\Documents\\TASK\\react-redux-starter-kit\\client/sprites/sprite.png",
+        "escaped_image": "C:\\Users\\wychoi\\Documents\\TASK\\react-redux-starter-kit\\client/sprites/sprite.png",
+        "total_width": 64,
+        "total_height": 64,
+        "offset_x": 0,
+        "offset_y": -32,
+        "px": {
+            "x": "0px",
+            "y": "32px",
+            "offset_x": "0px",
+            "offset_y": "-32px",
+            "height": "32px",
+            "width": "32px",
+            "total_height": "64px",
+            "total_width": "64px"
+        }
+    },
+    {
+        "x": 32,
+        "y": 32,
+        "width": 32,
+        "height": 32,
+        "name": "tea",
+        "source_image": "C:\\Users\\wychoi\\Documents\\TASK\\react-redux-starter-kit\\client\\sprites\\sources\\tea.png",
+        "image": "C:\\Users\\wychoi\\Documents\\TASK\\react-redux-starter-kit\\client/sprites/sprite.png",
+        "escaped_image": "C:\\Users\\wychoi\\Documents\\TASK\\react-redux-starter-kit\\client/sprites/sprite.png",
+        "total_width": 64,
+        "total_height": 64,
+        "offset_x": -32,
+        "offset_y": -32,
+        "px": {
+            "x": "32px",
+            "y": "32px",
+            "offset_x": "-32px",
+            "offset_y": "-32px",
+            "height": "32px",
+            "width": "32px",
+            "total_height": "64px",
+            "total_width": "64px"
+        }
+    }
+]

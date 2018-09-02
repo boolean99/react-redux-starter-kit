@@ -8,6 +8,10 @@ import { addTodoSync } from '../../actions/todos/actionCreators';
 import { fetchPostsAsync } from '../../actions/todos/asyncActions';
 import Loading from '../presentationals/Loading';
 
+import sprite from '../../sprites/sprite.png';
+import spriteJSON from '../../sprites/sprite.json';
+console.log(spriteJSON);
+
 const LoadableComponent = Loadable({
   loader: () => import('../presentationals/Lists'),
   loading: Loading
@@ -41,6 +45,7 @@ class AppContainer extends Component {
         <div>
           <Nav />
           <hr/>
+          <p><img src={ sprite } alt=""/></p>
           <button
               onClick={this.onClickHandler}
               onMouseOver={this.onHoverHandler}
