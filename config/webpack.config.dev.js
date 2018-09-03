@@ -218,7 +218,7 @@ module.exports = {
         glob: '**/*.png'
       },
       target: {
-        image: paths.appSrc + '/sprites/sprite.png',
+        image: paths.appPublic + '/images/sprite.png',
         css: [
           [paths.appSrc + '/sprites/sprite.json', {
             format: 'json_array'
@@ -226,7 +226,7 @@ module.exports = {
         ]
       },
       apiOptions: {
-        cssImageRef: paths.appSrc + '/sprites/sprite.png'
+        cssImageRef: '/images/sprite.png'
       }
     }),
     // Makes some environment variables available in index.html.
