@@ -57,6 +57,7 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
+    "prettier": "1.14.2",
     "redux-devtools-extension": "^2.13.5",
     "webpack-spritesmith": "^0.5.2"
   },
