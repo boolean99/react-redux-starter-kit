@@ -5,4 +5,4 @@ export const ADD_TODO = 'ADD_TODO';
 export const VisibilityFilters = {
   FRONT: 'FRONT',
   BACK: 'BACK'
-}
+};

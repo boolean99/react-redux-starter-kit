@@ -1,16 +1,16 @@
 import { VisibilityFilters } from '../../actions/todos/const';
 
-function visibilityFilters (state = VisibilityFilters.FRONT, action) {
+function visibilityFilters(state = VisibilityFilters.FRONT, action) {
   const casePack = {
-    [VisibilityFilters.FRONT] () {
+    [VisibilityFilters.FRONT]() {
       return {
         visibilityFilters: action.filter
-      }
+      };
     },
-    [VisibilityFilters.BACK] () {
+    [VisibilityFilters.BACK]() {
       return {
         visibilityFilters: action.filter
-      }
+      };
     }
   };
 

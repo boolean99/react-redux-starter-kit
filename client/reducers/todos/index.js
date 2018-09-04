@@ -1,10 +1,7 @@
-function todos (state = [], action) {
+function todos(state = [], action) {
   const casePack = {
-    ADD_TODO () {
-      return [
-        ...state,
-        action.payLoad
-      ]
+    ADD_TODO() {
+      return [...state, action.payLoad];
     }
   };
 

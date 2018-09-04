@@ -12,28 +12,21 @@ const StyledNavLink = styled(NavLink).attrs({
   width: 50%;
   text-align: center;
   display: inline-block;
-  
+
   &.activatedLink {
     opacity: 0.4;
   }
-`
+`;
 
 const Nav = () => {
   return (
-      <nav>
-        <StyledNavLink
-            to='/'
-            exact
-        >
-          Go Home
-        </StyledNavLink>
-        <StyledNavLink
-            to="/todo-list"
-        >
-          Go NavList
-        </StyledNavLink>
-      </nav>
-  )
-}
+    <nav>
+      <StyledNavLink to="/" exact>
+        Go Home
+      </StyledNavLink>
+      <StyledNavLink to="/todo-list">Go NavList</StyledNavLink>
+    </nav>
+  );
+};
 
 export default Nav;
