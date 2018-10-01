@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class Lists extends Component {
   render() {
@@ -7,7 +7,7 @@ class Lists extends Component {
       syncActionHandler,
       asyncActionHandler,
       listLength
-    } = this.props
+    } = this.props;
 
     return (
       <ol>
@@ -27,8 +27,8 @@ class Lists extends Component {
           </button>
         </li>
       </ol>
-    )
+    );
   }
 }
 
-export default Lists
+export default Lists;

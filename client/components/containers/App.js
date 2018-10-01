@@ -7,7 +7,6 @@ import Nav from '../presentationals/Nav';
 import { addTodoSync } from '../../actions/todos/actionCreators';
 import { fetchPostsAsync } from '../../actions/todos/asyncActions';
 import Loading from '../presentationals/Loading';
-
 import getSpriteCSS from '../../styled-components/getSpriteCSS';
 import styled from 'styled-components';
 
